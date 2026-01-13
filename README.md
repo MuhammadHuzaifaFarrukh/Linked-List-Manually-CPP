@@ -21,18 +21,19 @@ A comprehensive, header-only C++ template implementation of a **Singly Linked Li
 
 Since this is a template-based header-only library, you simply need to include `List.hpp` in your project.
 
-### FUNCTIONS :
+### FUNCTIONS
 
-push_front_list(T val)	Adds an element to the start.
-push_back_list(T val)	Adds an element to the end.
-pop_front_list()	Removes the first element.
-pop_back_list()	Removes the last element.
-insert_node(T val, int ind)	Inserts value at a specific index.
-remove_node(int ind)	Removes node at a specific index.
-selectionSort()	Sorts the list in ascending order.
-linear_search(T target)	Returns the index of the target value, or -1.
-clear_list()	Deallocates all nodes and resets the list.
-join(List& other)	Moves all nodes from another list to this one (Splice).
+* **`push_front_list(T val)`** Adds a new element to the start of the list.
+* **`push_back_list(T val)`** Adds a new element to the end of the list.
+* **`pop_front_list()`** Removes the first element and deallocates its memory.
+* **`pop_back_list()`** Removes the last element (requires O(n) traversal to update the tail).
+* **`insert_node(T val, int ind)`** Inserts a value at a specific index; automatically handles front/back cases.
+* **`remove_node(int ind)`** Removes the node at the specified index and reconnects the list.
+* **`selectionSort()`** Sorts the list in ascending order by swapping node data.
+* **`linear_search(T target)`** Returns the zero-based index of the target value, or -1 if not found.
+* **`clear_list()`** Deallocates all nodes in the list to prevent memory leaks.
+* **`join(List& other)`** Moves all nodes from another list to this one (the other list becomes empty).
+---
 
 ### Basic Example
 
