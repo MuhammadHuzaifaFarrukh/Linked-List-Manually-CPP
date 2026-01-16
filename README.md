@@ -36,11 +36,10 @@ Since this is a template-based header-only library, you simply need to include `
 ---
 
 ### How to Compile and Run:
-* Run this by command normally using `g++ file_name.cpp -o my_program` (Not a good practice).
+* Run this by command normally using `g++ file_name.cpp -o my_program` as done here in a single "List.h" file (Not a good practice).
 * If you have separated files for each class i.e separate classes for List , Node , Iterator and then include all the necessary headers in your file then you need to run by including all the .cpp files like below example:
-  `g++ file_name.cpp List.cpp Node.cpp Iterator.cpp -o my_program` 
-
-
+  `g++ file_name.cpp List.cpp Node.cpp Iterator.cpp -o my_program`
+Although it works by both methods , the choice depends on your design and style you prefer in working environment which makes ease for you.
 
 ### Basic Example
 
