@@ -498,7 +498,7 @@ public:
         // You may write them and then throw exception when anyone uses it-- or --it
         bool operator==(const Iterator& it)
         {
-            return (ptr!= it.ptr);
+            return (ptr== it.ptr);
         }
 
         bool operator!=(const Iterator& it)
@@ -529,3 +529,4 @@ public:
     }
 
 };
+
